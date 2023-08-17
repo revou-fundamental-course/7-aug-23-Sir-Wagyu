@@ -1,3 +1,7 @@
+document.getElementById("goto-menu").addEventListener("click", function () {
+  window.location.href = "#menu";
+});
+
 function hitung() {
   const inputContainer = document.getElementById("inputbox");
   const outputContainer = document.getElementById("outputbox");
