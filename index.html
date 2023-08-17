@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculetta</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!---navigation start-->
+    <header class="Wrapper">
+      <nav class="nav">
+        <h2 class="logo">Calculetta</h2>
+        <ul class="nav-button">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!---navigation end-->
+    <!--home page text start-->
+    <section class="homepage" id="home">
+      <div class="wrapper-home">
+        <div class="wrapper-text-home">
+          <h1 class="judul">Solusi Cepat, <br />Perhitungan Akurat</h1>
+          <p class="sub-judul">
+            Hanya dengan sekali klik, Calculetta akan membantumu menyelesaikan
+            tugas Matematika dengan cepat dan akurat.
+          </p>
+          <button href="#menu" class="start-button">Mari kita coba!</button>
+        </div>
+        <img src="Assets/bangun datar.png" class="welcome-image" />
+      </div>
+    </section>
+    <!--home page text end-->
+    <section id="menu" class="menupage">
+      <div class="judulpage">
+        <h1 class="pagesegitiga">Bangun Datar Segitiga</h1>
+      </div>
+      <div class="gambar-segitiga">
+        <img src="/Assets/segitiga.png" class="segitiga" />
+      </div>
+      <!--System input start-->
+      <div class="wrapper-input" id="inputbox">
+        <h2 class="box-title">Menghitung Keliling dan Luas</h2>
+        <div class="boxes">
+          <input
+            type="number"
+            id="alas"
+            class="input-box"
+            placeholder="Masukkan Alas (a)"
+            required
+          />
+          <input
+            type="number"
+            id="tinggi"
+            class="input-box"
+            placeholder="Masukkan Tinggi (t)"
+            required
+          />
+          <div class="btnwrapper">
+            <button onclick="hitung()" class="submit-btn">Mulai</button>
+            <p class="jawaban-salah" id="salah"></p>
+          </div>
+        </div>
+      </div>
+      <!--system input end-->
+      <!--system output start-->
+      <div class="wrapper-output" id="outputbox">
+        <h2 class="box-title">Hasil Perhitungan</h2>
+        <div class="boxes-output">
+          <div class="hasil-jawaban">
+            <div class="jawaban" id="output-keliling"></div>
+            <div class="jawaban" id="output-luas"></div>
+          </div>
+          <button onclick="reset()" class="reset-btn">Reset</button>
+        </div>
+      </div>
+      <!--system output end-->
+    </section>
+
+    <section id="about" class="aboutpage">
+      <div class="wrapper-about">
+        <!--text about start-->
+        <div class="textabout">
+          <h2 class="judulabout">
+            Who's Behind <br />
+            Calculetta?
+          </h2>
+          <p class="paragraf" id="paragraf1">
+            Hey there, I'm Wahyu Nur! I'm the one behind Calculetta. This is my
+            first dive into the world of software engineering, and I gotta say,
+            it's pretty darn exciting! 😄
+          </p>
+          <p class="paragraf" id="paragraf2">
+            My goal in creating Calculetta is to lend a hand to you and all the
+            folks out there who might be scratching their heads or just looking
+            for a quick way to tackle those basic math tasks handed out by
+            school. I'm hoping I can be of help to you in getting through those
+            math assignments, and you bet I'll keep working hard to fix any
+            pesky bugs and toss in some cool new features down the road that
+            might make your life even easier. Cheers! 🚀
+          </p>
+        </div>
+        <!--text about end-->
+        <!--photo start-->
+        <img src="/Assets/me.jpg" class="profile-picture" />
+        <!--photo end-->
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
